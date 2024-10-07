@@ -2,25 +2,3 @@ body {
     background-color: yellow;
     color: blue;
 }
-
-/*
-#tableau {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    background-color: aqua;
-}
-/*
-div.case0 {
-    background-color: blue;
-}
-
-div.case1 {
-    background-color: green;
-}
-
-div.case2 {
-    background-color: red;
-}
-*/
