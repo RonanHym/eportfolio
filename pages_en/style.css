@@ -51,7 +51,13 @@ div.nav{
     color: black;
 
 }
-
+a#logo{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding-right: 10px;
+}
 a.nav{
     background-color: var(--nav-bg-color);
     color: var(--dark-blue);
@@ -87,8 +93,9 @@ div.presentation{
     flex-direction: row;
     gap: 10px;
     width: fit-content;
-    background-color: black;
+    background-color: var(--dark-blue);
     color: var(--beige);
+    /* border-radius: 1rem; */
 }
 #hello{
     color: var(--beige);
