@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    /*les couleurs*/
+    --beige: rgb(245,245,220);
+    --dark-beige: rgb(175, 175, 153);
+    --grey: rgb(120,120,120);
+    --black: rgb(0,0,0);
+    --dark-grey: rgb(87,87,87);
+    /*utilisation des couleurs*/
+    --nav-bg-color: var(--grey);
+	--selected-nav-bg-color: var(--black);
+    --hover-nav-bg-color: var(--dark-grey);
+}
+
+body{
+    background-color: beige;
+    color: blue;
+    font-family: 'Montserrat';
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p{
+    margin: 0; /*pour éviter des problèmes à la con*/
+}
+h2{
+    margin: 0; /*pour éviter des problèmes à la con*/
+}
+h3{
+    margin: 0; /*pour éviter des problèmes à la con*/
+}
+
+div.nav{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background-color: aqua; */
+    color: black;
+
+}
+
+a.nav{
+    background-color: var(--nav-bg-color);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: .6rem;
+    transition: all .1s ease-in-out;
+    font-size: 1rem;
+}
+a.nav.selected{
+    background-color: var(--selected-nav-bg-color);
+}
+a.nav:hover{
+    /* padding: 15px; */
+    /* font-size: 1.2rem; */
+    background-color: var(--hover-nav-bg-color);
+}
+a.nav.selected:hover{
+    background-color: var(--selected-nav-bg-color);
+}
+
+div#main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.presentation{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: fit-content;
+    background-color: black;
+    color: var(--beige);
+}
+#hello{
+    color: var(--beige);
+    font-size: 8vw;
+}
+#Iam{
+    font-size: 2.9vw;
+}
+p.soustexte{
+    color: var(--dark-beige);
+}
+
+a.CV{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    border-radius: .4rem;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+}
+div.CV_container{
+    display: flex;
+    gap: 10px;
+}
+
+img.document-icon{
+    width: 50px;
+}
+
