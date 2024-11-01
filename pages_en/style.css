@@ -2,16 +2,14 @@
 
 html{
     /*les couleurs*/
-    --beige: #f5f5dc;
-    --dark-beige: rgb(175, 175, 153);
-    --grey: rgb(120,120,120);
-    --black: rgb(0,0,0);
-    --dark-grey: rgb(87,87,87);
+    --beige: #ebeef2;
+    --dark-beige: #afaf99;
+    --grey: #787878;
+    --black: #000000;
+    --dark-grey: #575757;
 
-    --light-blue: rgb(189, 204, 233);
-    /* --blue: rgb(99, 154, 255); */
-    --blue: hsl(220, 50%, 50%);
-    /* --dark-blue: rgb(40, 70, 120); */
+    --light-blue: #adc5f2;
+    --blue: #3366cc;
     --dark-blue: #192b4d;
     /*utilisation des couleurs*/
     --bg-color: var(--beige);
