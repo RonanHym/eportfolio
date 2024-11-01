@@ -7,15 +7,23 @@ html{
     --grey: rgb(120,120,120);
     --black: rgb(0,0,0);
     --dark-grey: rgb(87,87,87);
+
+    --light-blue: rgb(189, 204, 233);
+    /* --blue: rgb(99, 154, 255); */
+    --blue: hsl(220, 50%, 50%);
+    /* --dark-blue: rgb(40, 70, 120); */
+    --dark-blue: hsl(220, 50%, 20%);
     /*utilisation des couleurs*/
-    --nav-bg-color: var(--grey);
-	--selected-nav-bg-color: var(--black);
-    --hover-nav-bg-color: var(--dark-grey);
+    --bg-color: var(--beige);
+    --text-color: var(--black);
+    --nav-bg-color: var(--light-blue);
+	--selected-nav-bg-color: var(--dark-blue);
+    --hover-nav-bg-color: var(--blue);
 }
 
 body{
-    background-color: beige;
-    color: blue;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: 'Montserrat';
     margin: 20px;
     display: flex;
@@ -46,7 +54,7 @@ div.nav{
 
 a.nav{
     background-color: var(--nav-bg-color);
-    color: white;
+    color: var(--dark-blue);
     text-decoration: none;
     padding: 10px;
     border-radius: .6rem;
@@ -55,14 +63,17 @@ a.nav{
 }
 a.nav.selected{
     background-color: var(--selected-nav-bg-color);
+    color: var(--beige);
 }
 a.nav:hover{
     /* padding: 15px; */
     /* font-size: 1.2rem; */
     background-color: var(--hover-nav-bg-color);
+    color: var(--beige);
 }
 a.nav.selected:hover{
     background-color: var(--selected-nav-bg-color);
+    color: var(--blue);
 }
 
 div#main-container{
