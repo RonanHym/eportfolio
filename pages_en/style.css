@@ -92,6 +92,22 @@ div#main-container{
     gap: 20px;
 }
 
+div.frame{
+    background-color: var(--light-blue);
+    width: fit-content;
+    min-width: 400px;
+    padding: var(--border-radius);
+    border-radius: var(--border-radius);
+}
+h2.frame-title{
+    font-size: 30px;
+    margin-top: 20px;
+}
+div.frame-content{
+    margin-left: 30px;
+    /* margin-right: 20px; */
+}
+
 /*-------------------fin contenu global--------------------------*/
 
 /*-------------------welcome page--------------------------*/
@@ -135,7 +151,9 @@ div.engineering-course-content{
     margin-left: 30px;
     /* margin-right: 20px; */
 }
+/*-------------------fin engineering_course page--------------------------*/
 
+/*----------carreer_developpment----------*/
 a.CV{
     display: flex;
     flex-direction: column;
@@ -171,5 +189,39 @@ img.document-icon{
     margin-bottom: 5px;
 }
 
-/*-------------------fin engineering_course page--------------------------*/
+.contact-button{
+    text-decoration: none;
+    background-color: var(--light-blue);
+    color: var(--black);
+    width: fit-content;
+    padding: var(--border-radius);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+.contact-button:hover{
+    background-color: var(--hover-nav-bg-color);
+    color: var(--beige);
+}
 
+/*-------------------fin carreer_developpment page--------------------------*/
+
+/*-------------------other_activities-------------------*/
+
+.cards {
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
+    display: grid;
+    grid-gap: 1rem;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+div.frame.card{
+    min-width: 0px;
+    width: auto;
+}
+
+/*  -------------------fin other_activities-------------------*/

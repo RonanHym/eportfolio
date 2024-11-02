@@ -32,12 +32,21 @@
                 <p>French CV</p>
             </a>
         </div>
-        <h2>LinkedIn</h2>
-        <div>https://www.linkedin.com/in/ronan-hym-189336336/</div>
-        <div>QR-Code LinkedIn</div>
+        
+        <h2>Contact</h2>
+        <a class="contact-button" href="https://www.linkedin.com/in/ronan-hym-189336336/">LinkedIn</a>
+        <div class="contact-button" onclick="copy_mail()">ronan.hym@etu.toulouse-inp.fr</div>
+        
         <h2>Internships</h2>
         <p>No interships at the moment.</p>
     </div>
+
+    <script>
+        function copy_mail() {
+            navigator.clipboard.writeText(`ronan.hym@etu.toulouse-inp.fr`);
+        }
+    </script>
+
 </body>
 
 
