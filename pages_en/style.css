@@ -17,6 +17,8 @@ html{
     --nav-bg-color: var(--light-blue);
 	--selected-nav-bg-color: var(--dark-blue);
     --hover-nav-bg-color: var(--blue);
+
+    --border-radius: .4rem;
 }
 
 body{
@@ -32,10 +34,13 @@ body{
 p{
     margin: 0; /*pour éviter des problèmes à la con*/
 }
+h1{
+    margin: 0; /*pour éviter des problèmes à la con*/
+}
 h2{
     margin: 0; /*pour éviter des problèmes à la con*/
-    font-size: 40px;
-    margin-top: 20px;
+    /* font-size: 40px;
+    margin-top: 20px; */
 }
 h3{
     margin: 0; /*pour éviter des problèmes à la con*/
@@ -49,7 +54,6 @@ div.nav{
     align-items: center;
     /* background-color: aqua; */
     color: black;
-
 }
 a#logo{
     text-decoration: none;
@@ -63,7 +67,7 @@ a.nav{
     color: var(--dark-blue);
     text-decoration: none;
     padding: 10px;
-    border-radius: .6rem;
+    border-radius: var(--border-radius);
     transition: all .1s ease-in-out;
     font-size: 1rem;
 }
@@ -88,6 +92,9 @@ div#main-container{
     gap: 20px;
 }
 
+/*-------------------fin contenu global--------------------------*/
+
+/*-------------------welcome page--------------------------*/
 div.presentation{
     display: flex;
     flex-direction: row;
@@ -95,7 +102,8 @@ div.presentation{
     width: fit-content;
     background-color: var(--dark-blue);
     color: var(--beige);
-    /* border-radius: 1rem; */
+    border-radius: var(--border-radius);
+    padding: 10px;
 }
 #hello{
     color: var(--beige);
@@ -108,12 +116,32 @@ p.soustexte{
     color: var(--dark-beige);
 }
 
+/*-------------------fin welcome page--------------------------*/
+
+/*-------------------engineering_course page--------------------------*/
+
+h2.engineering-course{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+div.engineering-course{
+    background-color: var(--light-blue);
+    width: fit-content;
+    padding: var(--border-radius);
+    border-radius: var(--border-radius);
+}
+div.engineering-course-content{
+    margin-left: 30px;
+    /* margin-right: 20px; */
+}
+
 a.CV{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    border-radius: .4rem;
+    border-radius: var(--border-radius);
     padding: 10px;
     background-color: var(--light-blue);
     color: var(--dark-blue);
@@ -138,9 +166,10 @@ div.CV_container{
     gap: 10px;
 }
 
-
 img.document-icon{
     width: 50px;
     margin-bottom: 5px;
 }
+
+/*-------------------fin engineering_course page--------------------------*/
 
