@@ -36,6 +36,7 @@
         <h2>Contact</h2>
         <a class="contact-button" href="https://www.linkedin.com/in/ronan-hym-189336336/">LinkedIn</a>
         <div class="contact-button" onclick="copy_mail()">ronan.hym@etu.toulouse-inp.fr</div>
+        <div id="mail-copied">copied</div>
         
         <h2>Internships</h2>
         <p>No interships at the moment.</p>
@@ -43,7 +44,8 @@
 
     <script>
         function copy_mail() {
-            navigator.clipboard.writeText(`ronan.hym@etu.toulouse-inp.fr`);
+            navigator.clipboard.writeText("ronan.hym@etu.toulouse-inp.fr");
+            document.getElementById("mail-copied").style.display="block";
         }
     </script>
 

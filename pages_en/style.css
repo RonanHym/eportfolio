@@ -202,6 +202,9 @@ img.document-icon{
     background-color: var(--hover-nav-bg-color);
     color: var(--beige);
 }
+#mail-copied{
+    display:none;
+}
 
 /*-------------------fin carreer_developpment page--------------------------*/
 
