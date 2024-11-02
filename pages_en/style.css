@@ -121,6 +121,9 @@ div.presentation{
     border-radius: var(--border-radius);
     padding: 10px;
 }
+img#photo_Ronan{
+    width: 300px;
+}
 #hello{
     color: var(--beige);
     font-size: 8vw;
@@ -192,7 +195,7 @@ img.document-icon{
 .contact-button{
     text-decoration: none;
     background-color: var(--light-blue);
-    color: var(--black);
+    color: var(--dark-blue);
     width: fit-content;
     padding: var(--border-radius);
     border-radius: var(--border-radius);
