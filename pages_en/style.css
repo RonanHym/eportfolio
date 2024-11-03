@@ -192,6 +192,12 @@ img.document-icon{
     margin-bottom: 5px;
 }
 
+#contact-content-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
 .contact-button{
     text-decoration: none;
     background-color: var(--light-blue);
@@ -207,6 +213,8 @@ img.document-icon{
 }
 #mail-copied{
     display:none;
+    font-size: .8rem;
+    color: var(--dark-beige);
 }
 
 /*-------------------fin carreer_developpment page--------------------------*/
