@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+
+    font-family: 'Montserrat';
+
+    --light-bg-color: white;
+    --dark-bg-color: var(--green-990);
+    --bg-color: var(--light-bg-color);
+    --light-text-color: black;
+    --dark-text-color: white;
+    --text-color: var(--light-text-color);
+
+
+    --card-title-color: var(--green-300);
+    --card-text-color: var(--green-100);
+    --card-bg-color: var(--green-900);
+    
+    --card-padding: 20px;
+    --card-max-width: 400px;
+    
+
+    --default-card-bg-color: var(--green-900);
+    --default-card-title-color: var(--green-300);
+    --default-text-color: var(--green-100);
+    
+    
+    
+    --body-padding: 100px;
+    
+    --intersection-size: 100px;
+    
+    --section-title-font-size: 100px;
+    --section-subtitle-font-size: 70px;
+    --section-title-color: var(--text-color);
+    --section-subtitle-color: var(--text-color);
+    --section-bg-color: var(--bg-color);
+    
+    font-size: 17px;
+    line-height: 1.4;
+    
+
+}
+
+body {
+    --section-title-color: var(--text-color);
+    --section-subtitle-color: var(--text-color);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body.dark {
+    --bg-color: var(--dark-bg-color);
+    --text-color: var(--dark-text-color);
+}
+
+#main_container {
+    background-color: var(--bg-color);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+/* changer certains paramètres en fonction de la taille de l'écran */
+@media (min-width: 0px) {
+    html {
+        --card-padding: 20px;
+        --body-padding: 20px;
+        --section-title-font-size: 50px;
+        --section-subtitle-font-size: 30px;
+    }
+
+    #ronan_image {
+        height: auto;
+        width: 80%;
+    }
+
+    
+}
+@media (min-width: 700px) {
+    html {
+        --card-padding: 30px;
+        --body-padding: 100px;
+        --section-title-font-size: 100px;
+        --section-subtitle-font-size: 70px;
+    }
+
+    #ronan_image {
+        height: 500px;
+        width: auto;
+    }
+}
+
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* justify-content: center; */
+    /* justify-content: baseline; */
+    justify-content: flex-start;
+    min-height: 800px;
+
+    padding-left: var(--body-padding);
+    padding-right: var(--body-padding);
+    background-color: var(--section-bg-color);
+}
+
+.section_title {
+    color: var(--section-title-color);
+    font-size: var(--section-title-font-size);
+    font-weight: 100;
+    min-width: 0;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    /* word-wrap: break-word; */
+    hyphens: auto;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+.section_subtitle {
+    color: var(--section-subtitle-color);
+    font-size: var(--section-subtitle-font-size);
+    font-weight: 500;
+    min-width: 0;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.section_content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intersection {
+    width: 100%;
+    height: var(--intersection-size);
+    background-color: var(--bg-color);
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    max-width: 400px;
+    min-width: 250px;
+    
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    padding: var(--card-padding);
+}
+
+.card_text_container > h3 {
+    text-decoration: none;
+    color: var(--card-title-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.card_image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+#magic_image {
+    background-image: url("./images/magie.jpg");
+}
+
+#music_image {
+    background-image: url("./images/musique.jpg");
+}
+
+
+#ronan_image {
+    background-image: url("./images/photo_Ronan.jpg");
+    /* height: 500px; */
+    /* width: auto; */
+}
+
+
+
+#home_container {
+    max-height: 900px;
+
+    --card-bg-color: var(--home-card-bg-color);
+    --card-title-color: var(--home-card-title-color);
+    --card-text-color: var(--home-card-text-color);
+    --section-bg-color: var(--home-section-bg-color);
+}
+#hobbies_container {
+    --card-bg-color: var(--hobbies-card-bg-color);
+    --card-title-color: var(--hobbies-card-title-color);
+    --card-text-color: var(--hobbies-card-text-color);
+    --section-bg-color: var(--hobbies-section-bg-color);
+}
+
+#courses_container {    
+    --card-bg-color: var(--courses-card-bg-color);
+    --card-title-color: var(--courses-card-title-color);
+    --card-text-color: var(--courses-card-text-color);
+    --section-bg-color: var(--courses-section-bg-color);
+}
+
+#mobility_container {    
+    --card-bg-color: var(--mobility-card-bg-color);
+    --card-title-color: var(--mobility-card-title-color);
+    --card-text-color: var(--mobility-card-text-color);
+    --section-bg-color: var(--mobility-section-bg-color);
+}
+
+
+#career_container {
+    --card-bg-color: var(--career-card-bg-color);
+    --card-title-color: var(--career-card-title-color);
+    --card-text-color: var(--career-card-text-color);
+    --section-bg-color: var(--career-section-bg-color);
+}
+
+
+
+
+#home-courses {
+    background: linear-gradient(var(--home-section-bg-color), var(--courses-section-bg-color));
+}
+
+#courses-mobility {
+    background: linear-gradient(var(--courses-section-bg-color), var(--mobility-section-bg-color));
+}
+
+#mobility-hobbies {
+    background: linear-gradient(var(--mobility-section-bg-color), var(--hobbies-section-bg-color));
+}
+
+#hobbies-career {
+    background: linear-gradient(var(--hobbies-section-bg-color), var(--career-section-bg-color));
+}
+

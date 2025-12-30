@@ -1,0 +1,123 @@
+html {
+
+    --purple-50: rgb(234 229 237);
+    --purple-100: rgb(213 204 218);
+    --purple-200: rgb(193 179 200);
+    --purple-300: rgb(173 155 183);
+    --purple-400: rgb(153 131 165);
+    --purple-500: rgb(133 108 148);
+    --purple-600: rgb(114 86 131);
+    --purple-700: rgb(95 64 114);
+    --purple-800: rgb(76 43 98);
+    --purple-900: rgb(57 22 82);
+    --purple-950: rgb(38 0 66);
+    --purple-990: rgb(18, 0, 31);
+
+    --green-50: rgb(234 250 235);
+    --green-100: rgb(199 241 201);
+    --green-200: rgb(164 233 166);
+    --green-300: rgb(129 224 132);
+    --green-400: rgb(93 216 97);
+    --green-500: rgb(58 207 63);
+    --green-600: rgb(43 178 48);
+    --green-700: rgb(35 143 38);
+    --green-800: rgb(26 108 29);
+    --green-900: rgb(18 72 19);
+    --green-920: rgb(13, 56, 14);
+    --green-950: rgb(9 37 10);
+    --green-990: rgb(3, 14, 4);
+
+    --blue-50: rgb(231 237 254);
+    --blue-100: rgb(187 205 252);
+    --blue-200: rgb(143 173 250);
+    --blue-300: rgb(99 141 248);
+    --blue-400: rgb(39 97 245);
+    --blue-500: rgb(11 77 244);
+    --blue-600: rgb(9 63 200);
+    --blue-700: rgb(7 49 156);
+    --blue-800: rgb(5 36 112);
+    --blue-900: rgb(3 22 68);
+    --blue-950: rgb(1 8 24);
+
+    /* --orange-50: #FEF6E7; */
+    --orange-50: #ffefd1;
+    --orange-100: #FCE6BB;
+    --orange-200: #FAD68F;
+    --orange-300: #F8C663;
+    --orange-400: #F5B027;
+    --orange-500: #F4A60B;
+    --orange-600: #C88809;
+    --orange-700: #9C6A07;
+    --orange-800: #704C05;
+    --orange-900: #442F03;
+    --orange-950: #181101;
+
+    --red-50: #FFE6E6;
+    --red-100: #FFB8B8;
+    --red-200: #FF8A8A;
+    --red-300: #FF5C5C;
+    --red-400: #FF2E2E;
+    --red-500: #FF0000;
+    --red-600: #D10000;
+    --red-700: #AD0000;
+    --red-800: #750000;
+    --red-900: #470000;
+    --red-950: #1A0000;
+
+
+    /* career section */
+    --dark-career-card-bg-color: var(--orange-900);
+    --dark-career-card-title-color: var(--orange-300);
+    --dark-career-card-text-color: var(--orange-100);
+    --dark-career-section-bg-color: var(--orange-50);
+    
+    --career-card-bg-color: var(--orange-200);
+    --career-card-title-color: var(--orange-700);
+    --career-card-text-color: var(--orange-900);
+    --career-section-bg-color: var(--orange-50);
+    
+    /* hobbies section */
+    --dark-hobbies-card-bg-color: var(--red-900);
+    --dark-hobbies-card-title-color: var(--red-300);
+    --dark-hobbies-card-text-color: var(--red-100);
+    --dark-hobbies-section-bg-color: var(--red-50);
+    
+    --hobbies-card-bg-color: var(--red-200);
+    --hobbies-card-title-color: var(--red-700);
+    --hobbies-card-text-color: var(--red-900);
+    --hobbies-section-bg-color: var(--red-50);
+
+    /* home section */
+    --dark-home-card-bg-color: var(--green-900);
+    --dark-home-card-title-color: var(--green-300);
+    --dark-home-card-text-color: var(--green-100);
+    --dark-home-section-bg-color: var(--green-50);
+    
+    --home-card-bg-color: var(--green-200);
+    --home-card-title-color: var(--green-700);
+    --home-card-text-color: var(--green-900);
+    --home-section-bg-color: var(--green-50);
+    
+    /* courses section */
+    --dark-courses-card-bg-color: var(--purple-900);
+    --dark-courses-card-title-color: var(--purple-300);
+    --dark-courses-card-text-color: var(--purple-100);
+    --dark-courses-section-bg-color: var(--purple-50);
+    
+    --courses-card-bg-color: var(--purple-200);
+    --courses-card-title-color: var(--purple-700);
+    --courses-card-text-color: var(--purple-900);
+    --courses-section-bg-color: var(--purple-50);
+    
+    /* mobility section */
+    --dark-mobility-card-bg-color: var(--blue-900);
+    --dark-mobility-card-title-color: var(--blue-300);
+    --dark-mobility-card-text-color: var(--blue-100);
+    --dark-mobility-section-bg-color: var(--blue-50);
+    
+    --mobility-card-bg-color: var(--blue-200);
+    --mobility-card-title-color: var(--blue-700);
+    --mobility-card-text-color: var(--blue-900);
+    --mobility-section-bg-color: var(--blue-50);
+
+}

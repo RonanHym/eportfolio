@@ -1,0 +1,121 @@
+
+
+
+#navbar {
+    /* font-family: 'Montserrat'; */
+
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    
+    border-radius: 10px;
+    color: white;
+    --navbar-bg-color: rgba(95, 95, 95, 0.5);
+    background-color: var(--navbar-bg-color);
+    box-shadow: 0px 0px 10px var(--navbar-bg-color);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+    width: fit-content;
+    
+    transition: ease .3s;
+
+    backdrop-filter: blur(5px);          /* flou de l’arrière-plan */
+    -webkit-backdrop-filter: blur(5px);  /* Safari */
+}
+
+#navbar:hover {
+    gap: 0px;
+    /* width: 50%; */
+    transition: ease .3s;
+    justify-content: center;
+
+    --hover-navbar-bg-color: rgba(59, 59, 59, 0.7);
+    
+    background-color: var(--hover-navbar-bg-color);
+    box-shadow: 0px 0px 100px var(--hover-navbar-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_icon {
+    width: 50px ;
+    height: auto;
+}
+
+.icon_mask {
+    width: 50px ;
+    height: 50px;
+    background-color: red; /* desired color */
+
+    -webkit-mask-image: url(icons3/home-icon.svg);
+    -webkit-mask-size: cover;
+    mask-image: url(icons3/home-icon.svg);
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.nav_text {
+    display: none;
+    flex-grow: 0;
+    transition: .3s ease;
+}
+#navbar:hover > .nav_element > .nav_text {
+    display: block;
+    flex-grow: 0;
+}
+
+/* 
+#navbar:hover > .nav_element {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#navbar:hover > .nav_element:first-child {
+    padding-top: 20px;
+} */
+
+
+.nav_element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 0;
+    width: fit-content;
+    gap: 3px;
+    padding: 10px;
+    transition: ease .3s;
+    color: var(--light-text-color);
+}
+
+.nav_element:hover {
+    color: brown;
+}
+
+
+#nav-career:hover {
+    color: var(--career-card-bg-color)
+}
+
+#nav-home:hover {
+    color: var(--home-card-bg-color)
+}
+
+#nav-mobility:hover {
+    color: var(--mobility-card-bg-color)
+}
+
+#nav-courses:hover {
+    color: var(--courses-card-bg-color)
+}
+
+#nav-hobbies:hover {
+    color: var(--hobbies-card-bg-color)
+}
