@@ -47,13 +47,16 @@ body {
     --section-subtitle-color: var(--text-color);
     padding: 0px;
     margin: 0px;
+    background-color: var(--home-section-bg-color);
+    /* background: linear-gradient(var(--home-section-bg-color), var(--career-section-bg-color)); */
     
 }
 
+/* 
 body.dark {
     --bg-color: var(--dark-bg-color);
     --text-color: var(--dark-text-color);
-}
+} */
 
 #main_container {
     background-color: var(--bg-color);
